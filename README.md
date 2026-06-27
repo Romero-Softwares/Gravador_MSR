@@ -7,7 +7,8 @@ Aplicativo desktop em Python para gravacao de tela, audio e camera, empacotado c
 - Windows
 - Python com ambiente virtual em `.venv` ou `venv`
 - Dependencias do projeto ja instaladas no ambiente virtual
-- FFmpeg disponivel conforme configuracao do projeto
+- Pasta `ffmpeg` no diretorio raiz do projeto, contendo o executavel `ffmpeg.exe`
+- O FFmpeg deve ser compilado/empacotado junto com o aplicativo, pois e dependencia necessaria para decodificacao e processamento dos videos
 
 ## Executar em desenvolvimento
 

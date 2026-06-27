@@ -13,14 +13,6 @@ def garantir_ambiente_virtual():
     if getattr(sys, "frozen", False):
         return
 
-    usando_venv = (
-        hasattr(sys, "real_prefix")
-        or getattr(sys, "base_prefix", sys.prefix) != sys.prefix
-    )
-
-    if usando_venv:
-        return
-
     python_atual = os.path.normcase(os.path.abspath(sys.executable))
 
     for python_venv in VENV_PYTHON_CANDIDATES:
@@ -29,6 +21,13 @@ def garantir_ambiente_virtual():
             if python_atual != python_venv_absoluto:
                 os.execv(python_venv, [python_venv, *sys.argv])
             return
+
+    usando_venv = (
+        hasattr(sys, "real_prefix")
+        or getattr(sys, "base_prefix", sys.prefix) != sys.prefix
+    )
+    if usando_venv and os.path.commonpath([PROJECT_DIR, sys.prefix]) == PROJECT_DIR:
+        return
 
     print("ERRO: ambiente virtual do projeto nao encontrado.")
     print("Crie ou restaure uma pasta .venv ou venv dentro do projeto.")
