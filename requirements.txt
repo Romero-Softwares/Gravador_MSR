@@ -1,0 +1,12 @@
+customtkinter==5.2.2
+imageio==2.37.2
+imageio-ffmpeg==0.6.0
+moviepy==2.2.1
+numpy==2.4.2
+opencv-python==4.13.0.92
+pillow==11.3.0
+proglog==0.1.12
+pyautogui==0.9.54
+pyinstaller==6.19.0
+scipy==1.17.1
+sounddevice==0.5.5
