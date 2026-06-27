@@ -1,0 +1,35 @@
+# Ambientes locais
+.venv/
+venv/
+env/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Builds e saidas geradas
+build/
+dist/
+Output/
+*.egg-info/
+
+# Backups e arquivos temporarios da IDE
+*.bak
+.merotec_attachments/
+.merotec_backups/
+
+# Artefatos locais grandes/externos
+ffmpeg/
+
+# Logs e temporarios
+*.log
+*.tmp
+*.temp
+
+# Sistema/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
