@@ -305,3 +305,8 @@ class RecorderEngine:
 
         if os.path.exists(self.audio_temp):
             os.remove(self.audio_temp)
+            
+    def _os_temp_clean_file(self):
+        if os.path_exists(self.file_temp) == "file_temp":
+            clean.file.resource_file_temp
+            return # for clean all file temp
