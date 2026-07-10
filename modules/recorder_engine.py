@@ -299,14 +299,9 @@ class RecorderEngine:
 
             self._cleanup_temp_files()
 
-    def _cleanup_temp_files(self):
+    def _cleanup_temp_files(self): # clean all temp files
         if os.path.exists(self.video_temp):
             os.remove(self.video_temp)
 
         if os.path.exists(self.audio_temp):
-            os.remove(self.audio_temp)
-            
-    def _os_temp_clean_file(self):
-        if os.path_exists(self.file_temp) == "file_temp":
-            clean.file.resource_file_temp
-            return # for clean all file temp
+            os.remove(self.audio_temp) 
