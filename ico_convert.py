@@ -23,4 +23,4 @@ def criar_icone_circular(input_path, output_path):
     output.save(output_path, format='ICO', sizes=icon_sizes)
     print(f"Sucesso! Ícone circular salvo em: {output_path}")
 
-criar_icone_circular("icone.png", "icone.ico")
+criar_icone_circular("icone.png", "icone.ico") # input_path to output_path image
